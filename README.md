@@ -8,3 +8,36 @@
  |demo_ssm03|基于spring/spring mvc/mybatis手动配置构建的SSM框架|
  |demo_mJ1|mybatis框架搭建使用|
 ### mybatis汇总
+1. 配置
+* 环境配置(各种环境变量，数据库配置、别名、映射文件位置、属性、设置等)<br />
+  environments<br />
+  mappers<br />
+  typeAliases<br />
+  properties<br />
+  settings<br />
+  ..等
+* 映射配置(关系型数据到对象的映射，以及映射时使用的各种设计，包括缓存、映射结果规则、懒加载、动态sql等)<br />
+  cache<br />
+  select/insert/update/delete<br />
+  parameterType<br />
+  flushCache/useCache<br />
+  resultType<br />
+  resultMap<br />
+    association<br />
+      懒加载<br />
+    collection<br />
+      懒加载<br />
+  动态sql<br /><br />
+2. 主要类介绍
+  * SqlSessionFactory<br />
+  * SqlSession<br />
+    selectOne(<xml中id>,参数)  查询一个<br />
+    getMapper  通过接口获取映射实例<br />
+    ..等<br /><br />
+3. 缓存<br />
+  一级缓存：session本地缓存<br />
+  二级缓存：映射文件中配置<cache />开启二级缓存，或在单独的select中配置使用缓存。在环境配置文件中，可通过setting设置cacheEnable来控制所有映射器已经配置的任何缓存<br /><br />
+4. 懒加载  
+  在association与collection中设置fetchType为lazy  
+  在config.xml中设置lazyLoadingEnabled控制全局  
+  <br />
