@@ -1,3 +1,4 @@
+### 手动搭建SSM框架
 1. 创建webapp原型的maven项目
 2. 添加servlet依赖
 3. 更改project facets中的dynamic web module 为3.1
