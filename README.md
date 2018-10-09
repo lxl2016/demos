@@ -7,7 +7,7 @@
  |demo_ssm02|基于spring boot进行配置构建的SSM框架|
  |demo_ssm03|基于spring/spring mvc/mybatis手动配置构建的SSM框架|
  |demo_mJ1|mybatis框架搭建使用|
-### mybatis汇总
+### [mybatis汇总](demo_ssm03/README.md)
 1. 配置
 * 环境配置 -- (各种环境变量)<br />
   environments<br />
@@ -48,6 +48,7 @@
  * 全局控制<br />
   在config.xml中设置lazyLoadingEnabled控制全局  
   <br />
+  
 ### 手动搭建SSM框架
 1. 创建webapp原型的maven项目
 2. 添加servlet依赖
