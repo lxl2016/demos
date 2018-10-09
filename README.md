@@ -41,7 +41,7 @@
   * 二级缓存<br />
   映射文件中配置<cache />开启二级缓存，或在单独的select中配置使用缓存。在环境配置文件中，可通过setting设置cacheEnable来控制所有映射器已经配置的任何缓存<br />
   mybatis运行有效期间有效
-  <br />
+  <br /><br />
 4. 懒加载
  * 开启方式<br />
   在association与collection中设置fetchType为lazy  
